@@ -3,17 +3,6 @@ from bird import Bird
 from tube import Tube
 from random import randint
 
-'''
--------Удалить неиспользуемую функцию--------
-
-def paused():
-    
-    for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_ESCAPE or event.key == pygame.K_RETURN:
-                    flag_pause = False
-                    return flag_pause
-'''
 
 def main():
     pygame.init()
@@ -56,7 +45,6 @@ def main():
     tubes.add(Tube(screen, W, H, 'Images\\tube.png', speed))
 
     running = True
-    #flag_pause = False ------Удалить неиспользуемую переменную-------
 
     while running:
         scripts.events(bird, tubes)
