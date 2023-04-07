@@ -19,7 +19,13 @@ def events(bird, tubes):
             if event.key == pygame.K_p:
                 print('Запуск программы в', pygame.time.get_ticks()/1000)
                 bird.game_start = True
+                
+                # У группы элементов нет переменной. Или не знаю, как к ней обратиться
+                # Нужно переделать
+
+                #print(tubes.start_tube)
                 tubes.start_tube = True
+                #print(tubes.start_tube)
 
             # нажатие клавиши "пробел" для подъёма птички
 
